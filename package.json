@@ -1,0 +1,46 @@
+{
+  "scripts": {
+    "build": "ebam",
+    "test": "echo \"no test\""
+  },
+  "name": "dom-toggle-mixin",
+  "description": "A visibility toggle mixin",
+  "keywords": [
+    "toggle",
+    "DOM",
+    "mixin"
+  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "ebam": {
+    "entry": "src/index.js",
+    "transforms": {
+      "dangerousForOf": false,
+      "dangerousTaggedTemplateString": false
+    },
+    "test": {
+      "dest": "test/code.js",
+      "src": "test/src.js"
+    }
+  },
+  "author": "Quentin Engles <hollowdoor99@gmail.com> (https://hollowdoor.github.io)",
+  "main": "dist/bundle.js",
+  "jsnext:main": "dist/bundle.es.js",
+  "module": "dist/bundle.es.js",
+  "dependencies": {
+    "dom-event-dispatch": "^1.0.0",
+    "dom-get-element": "^1.1.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hollowdoor/dom_toggle_mixin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hollowdoor/dom_toggle_mixin/issues"
+  },
+  "homepage": "https://github.com/hollowdoor/dom_toggle_mixin#readme"
+}
